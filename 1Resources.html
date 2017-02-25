@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after these tags-->
+
+	<!--This script allows IE browsers older than 9 to recognize elements so that they can accept styles.-->
+
+<!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,main,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+
+	<title>Accessobilty in Web Design - Resources
+	 </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	
+</head>
+<body>
+
+	<!--Provide a skip to main content link to avoid Nav section reduntant reading by screen reader-->
+	
+	<a href="#maincontent" class="skipNav" >Skip to main content </a>
+
+	<!--Make a sticky footer-->
+	<div id="container">
+
+	<header role="banner">
+		<h1 id="top">Resources</h1>
+	</header>
+	<nav role="navigation">
+		<ul class="showing">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="1Stories.html" title="Stories">Stories</a></li>
+			<li><a href="1Examples.html" title="Examples">Examples</a></li>
+			<li><a href="1Resources.html" title="Resources">Resources</a></li>
+			<li><a href="1PlaceholderImgPage.html" title="Placeholder Page">Placeholder Page</a></li>
+		</ul>
+	<div class="handle" title="Menu">Menu</div>
+	</nav>
+	
+	<main id="maincontent" role="main">	
+
+	<h2>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Below are links to U.S. Government and private sites addressing accessibility issues, compliance regulations, and best practices.
+	</h2>
+		<a href="https://webaim.org" class="accessibleLink" title= "WebAIM.org" >WebAIM.org</a><br><br>
+
+		<a href="https://www.wave.webaim.org/" class="accessibleLink"   title="WAVE - Web Accessibility Evaluation tool.">WAVE- Web Accessibility Evaluation Tool  </a><br><br>
+
+		<a href="https://www.w3.org/WAI" class="accessibleLink" title="Web Accessibility Initiative.">Web Accessibility Initiative (WAI)</a><br><br>
+
+		<a href= "https://validator.w3.org/" class="accessibleLink" title="w3c Markup validation Service.">W3C Markup Validation Service</a><br><br>
+
+		<a href="http://webaim.org/resources/evalquickref/" class="accessibleLink"  title="WebAim Evalualtion Quick Reference.">WebAIM Evaluation Quick Reference</a><br><br>
+
+		<a href="http://www.webaim.org/standards/wcag/checklist/" class="accessibleLink"  title="WebAIM's WCAG 2.0 checklist">WebAIM's WCAG 2.0 Checklist
+		</a><br><br>
+
+		<a href="https://www.w3.org/WAI/intro/people-use-web/stories#shopper" class="accessibleLink" title="Examples of people with disabilities who use the web."> Web Accessibility Initiative (WAI) document: "Web Accessibility Perspectives: Explore the Impact and Benefits For Everyone with Videos. &copy;  Copyright; 2016" 
+ 		</a><br><br>
+
+
+
+ 		<a href="http://www.dasplankton.de/ContrastA" class="accessibleLink"   title="Find Accessible Color Contrast Combinations." >Find Accessible Color Contrast Combinations </a><br><br>
+
+ 		<a href="http://www.webaim.org/resources/contrastchecker/" class="accessibleLink"  title="Contrast Checker.">WebAIM Color Contrast Checker
+ 		</a><br><br>
+
+ 		<a href="https://www.Section508.gov/Section-508-of-the-rehabilitation-act" class="accessibleLink"  title="Section508">Section 508</a><br><br>
+
+ 		<a href="http://www.jimthatcher.com/webcourse1.htm" class="accessibleLink"  title= "Jim Thatcher's Blog - Section 508.">Jim Thatcher's Blog - Provides Review of Section 508 Regulations</a><br><br>
+
+ 		<a href="http://www.hongkiat.com/blog/web-accessibility-design-guide/" class="accessibleLink"  title="Web Accessibility Design Guide-Blog.">Web Accessibility Design Guide - Blog</a><br><br>
+
+
+		<a href="https://webdesign.tutsplus.com/articles/6-tips-for-improving-website-accessibility--webdesign-1660" class="accessibleLink"  title="6 Tips for Improving Website Accessibility - Blog.">6 Tips for Improving Website Accessibility - Blog</a><br><br>
+
+		<a href="https://mobiforge.com/design-development/why-mobile-web-accessibility-matters-best-practices-make-your-mobile-site-accessible/" class="accessibleLink"  title="Best Practices For Mobile Site Accessibility - Blog">Best Practices For Mobile Site Accessibility - Blog</a> <br><br><br><br>
+
+
+		<div id="Acronyms">Acronyms:</div>
+		<p class="Acronyms">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WebAIM - Web Accessibility In Mind</p>
+		<p class="Acronyms">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WAI - Web Accessibility Initiative</p>
+		<p class="Acronyms">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W3C - World Wide Web Consortium</p>
+		<p class="Acronyms">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WCAG - Web Content Accessibility Guidelines </p>
+
+
+
+
+	<!--sticky footer: set everything not in footer in a container.  Close before footer.-->
+	</div>
+<div id="up" >
+	<a  href="#top">Return to Top</a>
+</div>
+	<footer role="contentinfo">
+		<p>&copy; Copyright 2016 by Jeanne Mccabe</p>
+		
+	</footer>
+
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing'); 
+	});
+</script>
+
+
+
+	
+</main>
+</body>
+</html>

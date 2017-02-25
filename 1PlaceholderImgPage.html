@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after these tags-->
+
+	<!--This script allows IE browsers older than 9 to recognize elements so that they can accept styles.-->
+
+<!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,main,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+
+	<title>Accessibility In Web Design - Placeholder Image Page
+	 </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	
+</head>
+<body>
+
+	<!--Provide a skip to main content link to avoid Nav section reduntant reading by screen reader-->
+	
+	<a href="#maincontent" class="skipNav" >Skip to main content </a>
+
+
+	<!--Make a sticky footer-->
+	<div id="container">
+	<header role="banner">
+		<h1 id="top">Accessibility In Web Design</h1>
+	</header>
+	<nav role="navigation" >
+		<ul class="showing">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="1Stories.html">Stories</a></li>
+
+			<li><a href="1Examples.html">Examples</a></li>
+			<li><a href="1Resources.html">Resources</a></li>
+			<li><a href="1PlaceholderImgPage.html">Placeholder Page</a></li>
+		</ul>
+	<div class="handle">Menu</div>
+	</nav>
+	<main id="maincontent" role="main" >
+	<h2>Placeholder Images Demonstrate Responsive And Accessible Image Layouts.</h2>
+
+	<a href= "http://dummyimage.com"><img src="http://dummyimage.com/300x300/a6a8af/1d0e17.png" alt= " "   class= "placeholder"  /></a>
+
+	<a  href= "http://dummyimage.com"><img src="http://dummyimage.com/300x300/a6a8af/1d0e17.png" alt=" "  class= "placeholder"  /></a>
+	
+
+	<a href= "http://dummyimage.com"><img src="http://dummyimage.com/300x300/a6a8af/1d0e17.png" alt=" "  class= "placeholder" 	/></a>
+
+	<a href= "http://dummyimage.com"><img src="http://dummyimage.com/300x300/a6a8af/1d0e17.png" alt=" "  class= "placeholder" /></a>
+
+	
+<!--sticky footer: set everything not in footer in a container.  Close before footer.-->
+	</div>
+<div id="up" >
+	<a  href="#top">Return to Top</a>
+</div>
+	<footer>
+		<p> &copy; Copyright  2016 by Jeanne Mccabe</p>
+		
+	</footer role="contentinfo">
+	
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing');
+	});
+</script>
+</main>
+</body>
+</html>
+	

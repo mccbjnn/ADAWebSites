@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after these tags-->
+	<!--This script allows IE browsers older than 9 to recognize elements so that they can accept styles.-->
+
+<!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,main,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+
+	<title>Accessibility In Web Design - Examples
+	 </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	
+</head>
+<body>
+<!--Provide a skip to main content link to avoid Nav section reduntant reading by screen reader-->
+
+	<a href="#maincontent" class="skipNav" >Skip to main content </a>
+	<!--Make a sticky footer-->
+	<div id="container">
+	<header  role="banner">
+		<h1 id="top">Examples</h1>
+	</header>
+	<nav role=navigation>
+		<ul class="showing">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="1Stories.html" title="Stories">Stories</a></li>
+			<li><a href="1Examples.html" title="Examples">Examples</a></li>
+			<li><a href="1Resources.html" title="Resources">Resources</a></li>
+			<li><a href="1PlaceholderImgPage.html" title="Placeholder Page">Placeholder Page</a></li>
+		</ul>
+	<div class="handle">Menu</div>
+	</nav>
+	
+
+	<main id="maincontent" role="main">		
+				
+			<h2> Below are examples of Section 508 compliant and non-compliant alt text and color contrast specifications. </h2>
+		
+		
+		
+	
+		<div class="AltText">
+		<p class="centerTitle">Alt text 508 Compliant</p>
+
+			<p>Let's start at <a href= "http://www.google.com" title="Google's home page.">Google's home page.</a>
+			The Hyper Text Markup Language 5 (HTML5) code with alt text for screen readers looks like this:<br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Let's start at&lt;a href=&quot;http://www.google.com&quot; alt=&quot;Google's home page.&quot; &gt;Google's home page.  &lt;/a&gt;&lt;/p&gt; </p>
+		</div>
+
+
+
+		<div class="AltText">
+		<p class="centerTitle" >Not Alt Text 508 Compliant</p>
+		
+
+			<p> Let's start at <a href= "http://www.google.com" title="Google's home page.">Google's home page.</a>
+			The non-compliant (Hyper Text Markup Language 5) HTML5 code (omitting alt text for screen readers) looks like this:<br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Let's start at &lt;a href=&quot;http://www.google.com&quot;&gt;<wbr>Google's home page.  &lt;/a&gt;&lt;/p&gt; </p>
+		</div>		
+		
+		<P class="ColorContrastTitle">Color Contrast Examples</P><br><br>
+
+<!--This text, explaining what the two examples of color contrast are relative to Section 508 rules, is invisible to the sighted reader but will be read by screen readers.-->
+
+		<div class="hidden">Two examples of color contrast are provided, one Section 508 compliant with a high contrast ratio and one not compliant with Section 508 due to it's low color contrast ratio.</div>
+	
+		<div id="CompliantColor">
+			<h3>High Color Contrast</h3>
+			<p>See Resources page for links to color contrast checkers.</p>
+		</div>
+
+	
+		<div id="NonCompliantColor">
+			<h3>Low Color Contrast</h3>
+			<p>See Resources page for links to color contrast checkers.</p>
+		</div>
+
+
+
+<!--close sticky footer after return to top div-->
+	</div>
+	
+	
+<div id="up" >
+	<a  href="#top">Return to Top</a>
+</div>
+
+
+	<footer role="contentinfo">
+		
+		<p>&copy; Copyright  2016 by Jeanne Mccabe</p>
+	</footer>
+	
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing');
+	});
+</script>
+</main>
+</body>
+</html>

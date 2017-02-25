@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after these tags-->
+
+	<!--This script allows IE browsers older than 9 to recognize elements so that they can accept styles.-->
+
+	<!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,main,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+
+	<title>Accessibility In Web Design
+	 </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	
+</head>
+<body>
+
+<!--make a skip to main content link for screen readers to avoid redundant reading of navigation-->
+
+	<a href="#maincontent" class="skipNav">Skip to main content </a>
+
+
+	<!--Make a sticky footer-->
+	<div id="container">
+	<header role="banner">
+
+	
+		<h1 id="top">Accessibility In Web Design</h1>
+	</header>
+	<nav role="navigation">
+		<ul class="showing">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="1Stories.html" title="Stories">Stories</a></li>
+			<li><a href="1Examples.html" title="Examples">Examples</a></li>
+			<li><a href="1Resources.html" title="Resources">Resources</a></li>
+			<li><a href="1PlaceholderImgPage.html" title="Placeholder Page">Placeholder Page</a></li>
+		</ul>
+	<div class="handle" title="Menu" >Menu</div>
+	</nav>
+	
+	<main id="maincontent" role="main">
+
+	<section role="region">
+			<h2>What is Accessibility?</h2>
+				<p><strong>An accessible website is one that can be used by individuals with disabilities.  </strong>
+				 This  includes low vision, color blindness, blindness, hearing loss, mobility impairments, and cognitive disabilities.  Accessibility does more than maximize access to sites for many types of users, it can protect you from litigation. Many accessibility features are easily implemented if they are planned from the beginning of website development.  Guidelines for implementing these features address font size, descriptive alternative text for links, color contrast, and keyboard accessibility.</p>
+	</section>
+
+	<section role="region">
+			<h2>What is Section 508?</h2>
+			<p><strong>Section 508 is an amendment to the Workforce Rehabilitation Act of 1973.</strong>
+		It requires that electronic and information technology developed or purchased by the federal government be accessible for persons with disabilities.  It has binding, enforceable, standards.  Although Section 508 provides standards for all information technology (for instance browsers and assistive devices), the focus here is on web accessibility.  The Resources page located at the end of this site provides links to government websites delineating every aspect of the laws.
+			The objective of Section 508, simply stated, is that technology should be able to be used as effectively by people with varied disabilities as those without.  Accessibility is defined through as set of standards developed by a committee composed of representatives from industry, academia, government, and disability advocacy organizations. Section 508 technical standards dictate that covered websites satisfy sixteen specific items for web accessibility.  The goal is to ensure that a mobility impaired or blind user, for example, can use the site. Two examples are that the site must be equipped with alternative text for images and appropriate captions for videos and audios.  Please see the Examples pages of this site to view the use of alternative text and color contrast, both in compliance with Section 508 and not in compliance with Section 508.  There are many more examples online and in the sites on the Resources page.  This description of Section 508 is summarized from a <a href="http://www.jimthatcher.com/webcourse1.htm" title= "Jim Thatcher's Blog - Section 508.">web accessibility tutorial published by Jim Thatcher.</a> A link to his Blog is provided on the Resources page. 
+				</p>
+	</section>
+<!--sticky footer: set everything not in footer in a container.  Close before footer.-->
+	</div>
+<div id="up" >
+	<a  href="#top">Return to Top</a>
+</div>
+	<footer role="contentinfo">
+		<p>&copy; Copyright  2016 by Jeanne Mccabe</p>
+		
+	</footer>
+	
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing');
+	});
+</script>
+</main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after these tags-->
+	
+	<!--This script allows IE browsers older than 9 to recognize elements so that they can accept styles.-->
+
+
+<!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,main,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+
+	<title>Accessibility in Web Design -Stories
+	 </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	
+</head>
+<body>
+<!--Make a skip to maint content link to avoid redundant screen share Nav reading-->
+
+<a href="#maincontent" class="skipNav" >Skip to main content </a>
+
+	<!--Make a sticky footer-->
+	<div id="container">
+	<header role="banner">
+		<h1 id="top">Stories</h1>
+	</header>
+	
+	<nav role="navigation">
+		<ul class="showing">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="1Stories.html" title="Stories">Stories</a></li>
+			<li><a href="1Examples.html" title="Examples">Examples</a></li>
+			<li><a href="1Resources.html" title="Resources">Resources</a></li>
+			<li><a href="1PlaceholderImgPage.html" title="Placeholder Page">Placeholder Page</a></li>
+		</ul>
+	<div class="handle" title="Menu">Menu</div>
+	</nav>
+
+	<main id="maincontent" role="content">
+
+	<h2 class= "accessibleTitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data used in these user stories is taken from <a href="http://www.w3.org/WAI/intro/people-use-web/stories#shopper" title ="Examples of people with disabilities who use the web.">the Web Accessibility Initiative (WAI)  document: "Web Accessibility Perspectives: Explore the Impact and Benefits For Everyone with Videos. &copy; Copyright 2016"</a></h2><br>
+
+	<p class="accessibleText"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joel is color blind.</strong> In order for him to navigate and read a website, the site must be designed with background and foreground with a high contrast (typically 4.5:1).  He can then discern logos, text, images, and complimentary text easily.  Some researchers estimate that 8% of the US population is color blind.</p>
+		
+<p class="accessibleText"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suzie has good vision but she has a slight tremor.</strong> People with reduced dexterity can find it easier to use websites with large links, buttons, and controls.  Small controls, and controls that are placed too close to each other, are difficult for many people to use.  This is especially important as more people use mobile devices with small screens.</p>	
+
+<p class="accessibleText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Paul has low vision.</strong> After a stroke, his field of vision was reduced to the diameter of the hole in a large straw.  Paul uses his unassisted sight, screen magnification links, and at times, a screen reader to read and interact with websites.  Clear, predictable website designs help him use the web.  This means that different parts of the website, such as navigation menus, links, and text sections should be easy to locate and identify.  Sites clearly laid out with standard designs also help individuals with cognitive and learning disorders.
+	
+</p>
+	    	
+<!--sticky footer: set everything not in footer in a container.  Close before footer.-->
+	</div>
+<div id="up" >
+	<a  href="#top">Return to Top</a>
+</div>
+	<footer role="contentinfo">
+		
+		<p>&copy; Copyright  2016 by Jeanne Mccabe</p>
+	</footer>
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing');
+	});
+</script>
+</main>
+</body>
+</html>
